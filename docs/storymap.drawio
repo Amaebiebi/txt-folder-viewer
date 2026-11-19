@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="RECOPpK-pvRv2_LrxIJK" name="ページ-1">
-        <mxGraphModel dx="1393" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="842" dy="380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -64,7 +64,7 @@
                 <mxCell id="9eYPMVfUNHTWPUbWxJ2i-71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="登録したフォルダ" vertex="1">
                     <mxGeometry height="60" width="120" x="280" y="554" as="geometry"/>
                 </mxCell>
-                <mxCell id="9eYPMVfUNHTWPUbWxJ2i-72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="クリックしたファイルを表示" vertex="1">
+                <mxCell id="9eYPMVfUNHTWPUbWxJ2i-72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="□クリックしたファイルを表示" vertex="1">
                     <mxGeometry height="60" width="120" x="860" y="555" as="geometry"/>
                 </mxCell>
                 <mxCell id="9eYPMVfUNHTWPUbWxJ2i-78" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="名前変更" vertex="1">
