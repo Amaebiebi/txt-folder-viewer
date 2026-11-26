@@ -2,14 +2,15 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TreeView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
    <center>
@@ -26,8 +27,15 @@
                                     <Insets bottom="5.0" left="5.0" top="5.0" />
                                  </VBox.margin>
                               </Label>
-                              <ListView prefHeight="413.0" prefWidth="143.0" />
-                              <Button mnemonicParsing="false" text="Button">
+                              <ListView fx:id="folderList" prefHeight="413.0" prefWidth="143.0">
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                        <MenuItem fx:id="deleteFolderMenuItem" mnemonicParsing="false" text="Unspecified Action" />
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu></ListView>
+                              <Button fx:id="addFolderButton" mnemonicParsing="false" text="Button">
                                  <VBox.margin>
                                     <Insets bottom="5.0" left="5.0" top="5.0" />
                                  </VBox.margin>
@@ -41,7 +49,7 @@
                                     <Insets bottom="5.0" left="5.0" top="5.0" />
                                  </VBox.margin>
                               </Label>
-                              <TreeView prefHeight="378.0" prefWidth="143.0" />
+                              <TreeView fx:id="fileTreeView" prefHeight="378.0" prefWidth="143.0" />
                            </children>
                         </VBox>
                      </items>
@@ -55,7 +63,7 @@
                         <Insets bottom="5.0" left="5.0" top="5.0" />
                      </VBox.margin>
                   </Label>
-                  <TextArea prefHeight="415.0" prefWidth="296.0" />
+                  <TextArea fx:id="previewArea" prefHeight="415.0" prefWidth="296.0" />
                </children>
             </VBox>
         </items>
