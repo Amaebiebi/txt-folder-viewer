@@ -1,6 +1,7 @@
 package com.example;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.io.File;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -32,6 +33,13 @@ public class MainController {
     @FXML
     private void initialize() {
         // Hint: initialize() will be called when the associated FXML has been completely loaded.
-
+        DirectoryChooser chooser = new DirectoryChooser();
+        chooser.setTitle("フォルダを選択");
+        
+        addFolderButton.setOnAction((e)->{
+            File selectDir = chooser.showDialog(null);
+            String selectDirPath = selectDir.getPath();
+            System.out.println("パス："+ selectDirPath);
+        });
     }
 }
