@@ -1,8 +1,30 @@
 package com.example;
 import java.io.IOException;
+import java.nio.file.Path;
+
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TreeView;
 
 public class MainController {
+    @FXML
+    private ListView<String> folderList;
+
+    @FXML
+    private MenuItem deleteFolderMenuItem;
+
+    @FXML
+    private Button addFolderButton;
+
+    @FXML
+    private TreeView<Path> fileTreeView;
+
+    @FXML
+    private TextArea previewArea;
+
     
 
     @FXML
